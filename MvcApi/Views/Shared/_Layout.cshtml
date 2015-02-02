@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>@ViewBag.Title</title>
+
+    <!-- CSS  -->
+    <link href="/web/css/styles.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+<body ng-app="app">
+    <nav class="green lighten-1" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+
+                <ul id="nav-mobile" class="right side-nav">
+                    <li ng-show="user" class="user-tab">Welcome {{user.firstName}}</li>
+                    <li><a href="#/">Dashboard</a></li>
+                    <li><a href="#/accounts">Accounts</a></li>
+                    <li><a href="#/transactions">Transactions</a></li>
+                    <li><a href="#/reports">Reports</a></li>
+                    <li><a href="#/auth/logout">Log off</a></li>
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+    <div class="section">
+        <!--   Icon Section   -->
+        <div class="row" ng-controller="MainCtrl">
+            <div class="col m12">
+                @RenderBody()
+            </div>
+
+            <div id="modal1" class="modal">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+                <a class="waves-effect btn-large modal-close">Agree</a>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="green">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">© @DateTime.Now.Year</h5>
+                    <p class="grey-text text-lighten-4">
+                        With Simple, you get a stylish Simple Visa® Card, no surprise fees, and powerful budgeting and savings tools built right into your account—all accessible via web, iPhone, and Android.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="orange-text lighten-3" target="_blank" href="http://ahmadmoussawi.com/p/resume.html">Ahmad Moussawi </a>
+            </div>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/js/libs")
+    @Scripts.Render("~/js/app")
+    @RenderSection("scripts", false)
+
+</body>
+</html>

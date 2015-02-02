@@ -1,0 +1,46 @@
+<div class="row">
+    <spinner ng-show="loading"></spinner>
+    <div id="loginform" ng-class="{'semi-transparent':loading}">
+        <article class="card white">
+            <header>
+                <h2 class="title">Login</h2>
+                <p>Please enter your email and password</p>
+            </header>
+            <form name="form" class="validate" ng-submit="login()">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="email" id="email"
+                               ng-model="model.email"
+                               ng-required="true"
+                               type="email"
+                               class="validate">
+                        <label for="email" ng-class="{active:model.email}">Email</label>
+                        <p class="error"
+                           ng-show="form.email.$dirty && (form.email.$error.email || form.email.$error.required)">
+                            Please provide a valid email
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="password" id="password"
+                               ng-model="model.password"
+                               ng-required="true"
+                               type="password"
+                               class="validate">
+                        <label for="password" ng-class="{active:model.password}">Password</label>
+                        <p class="error"
+                           ng-show="form.password.$dirty && form.password.$error.required">
+                            This password is required
+                        </p>
+                    </div>
+                </div>
+
+
+                <button ng-disabled="form.$invalid" type="submit" class="waves-effect waves-light btn-large">Login</button>
+                <a class="waves-effect waves-teal btn-flat" href="#/auth/register">Register</a>
+            </form>
+
+        </article>
+    </div>
+</div>

@@ -1,0 +1,88 @@
+<div class="row">
+    <spinner ng-show="loading"></spinner>
+
+    <article id="registerform" class="card white" ng-class="{'semi-transparent':loading}">
+        <header>
+            <h2 class="title">Register</h2>
+            <p>Please fill the following information</p>
+        </header>
+        <form class="col s12" name="form" ng-submit="submit()">
+
+            <div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="first_name" id="first_name"
+                               ng-model="model.first_name"
+                               ng-required="true"
+                               type="text"
+                               class="validate">
+                        <label for="first_name" ng-class="{active:model.first_name}">First name</label>
+                        <p class="error"
+                           ng-show="form.first_name.$dirty && form.first_name.$error.required">
+                            This first name is required
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="last_name" id="last_name"
+                               ng-model="model.last_name"
+                               ng-required="true"
+                               type="text"
+                               class="validate">
+                        <label for="last_name" ng-class="{active:model.last_name}">Last name</label>
+                        <p class="error"
+                           ng-show="form.last_name.$dirty && form.last_name.$error.required">
+                            This last name is required
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="email" id="email"
+                               ng-model="model.email"
+                               ng-required="true"
+                               type="email"
+                               class="validate">
+                        <label for="email" ng-class="{active:model.email}">Email</label>
+                        <p class="error"
+                           ng-show="form.email.$dirty && (form.email.$error.email || form.email.$error.required)">
+                            Please provide a valid email
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="password" id="password"
+                               ng-model="model.password"
+                               ng-required="true"
+                               type="password"
+                               class="validate">
+                        <label for="password" ng-class="{active:model.password}">Password</label>
+                        <p class="error"
+                           ng-show="form.password.$dirty && form.password.$error.required">
+                            This password is required
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="password2" id="password2"
+                               ng-model="model.password2"
+                               ng-required="true"
+                               type="password"
+                               class="validate">
+                        <label for="password2" ng-class="{active:model.password2}">Confirm password</label>
+                        <p class="error"
+                           ng-show="form.password2.$dirty && model.password != model.password2">
+                            Password does not match
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <button ng-disabled="form.$invalid || model.password !== model.password2" type="submit" class="waves-effect waves-light btn-large">Register</button>
+            <a class="waves-effect waves-teal btn-flat" href="#/auth/login">Cancel</a>
+        </form>
+    </article>
+</div>

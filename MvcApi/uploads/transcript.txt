@@ -1,0 +1,24 @@
+﻿Treva W: Thank you for reaching out to Rackspace Cloud Support!  How may I help you?
+You: Hi, I am facing a network issue on one of my servers
+You: sometimes it goes off netowrk
+You: ?
+Treva W: Okay. Which server?
+You: 23.253.81.220 ( talaco-slave)
+Treva W: Okay. Are you having networking issues right now? I can watch traffic from the host to see where it's being dropped
+You: yes
+You: still 
+Treva W: Okay, let me take a look
+Treva W: This is over publicnet, correct?
+You: yes 
+You: sure
+Treva W: Alright, give me a few minutes to investigate.
+You: ok
+Treva W: Are you downloading anything currently?
+You: no 
+You: is there a traffic to it ?
+Treva W: There's a lot of traffic going out, yes but I don't see anything coming in. Most of the traffic is going to the 124.226.66.0/16 subnet, which is apparently belonging to China Telecom
+You: mm how can i stop this ?
+You: can u break it out 
+Treva W: You might be running a botnet. Here's a sample of traffic I'm seeing - https://gist.github.com/anonymous/e98434e5ebae1c8b0bee
+Treva W: Here's a series of articles that will help you investigate. Hopefully this can be cleaned up by changing server passwords but you may need to put the server into rescue mode - http://www.rackspace.com/knowledge_center/article/recovering-from-and-dealing-with-a-site-compromise
+You: ok thanks, !

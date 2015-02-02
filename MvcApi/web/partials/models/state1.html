@@ -1,0 +1,101 @@
+<div class="row">
+    <form class="col s12" name="form" ng-submit="createModel()">
+        <!--    <blockquote>
+                <pre>{{ form | json}}</pre>
+            </blockquote>-->
+        <div class="row">
+            <div class="col s8">
+                <h4>Create a new model</h4>
+                <p>Create a model with the following information</p>
+                <br/>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="name" id="model_name" ng-model="model.display" ng-required="true" type="text" class="validate">
+                        <label for="model_name" class="active">Model Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input name="table" id="table_name" ng-model="model.name" ng-required="true" type="text" class="validate">
+                        <label for="table_name" class="active">Table Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea name="description" class="materialize-textarea" ng-model="model.description"></textarea>
+                        <label>Description</label>
+                    </div>
+                </div>
+
+                <h5>Columns</h5>
+                <table>
+                    <thead>
+                        <tr>
+                            <th data-field="display">Display name</th>
+                            <th data-field="name">Name</th>
+                            <th data-field="type">Data type</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr ng-repeat="column in model.columns">
+                            <td>{{column.display}}</td>
+                            <td><i>{{column.name}}</i></td>
+                            <td>{{column.type}}</td>
+                            <td></td>
+                        </tr>
+                        <tr ng-repeat-end>
+                            <td>
+                                <input ng-enter="addColumn()" id="displayInput" name="display" placeholder="Display name" type="text" ng-model="newCol.display"/>
+                            </td>
+                            <td>
+                                <input ng-enter="addColumn()" name="display" placeholder="Name" type="text" ng-model="newCol.name"/>
+                            </td>
+                            <td>
+                                <select ng-enter="addColumn()" class="browser-default" ng-model="newCol.type" ng-options="v for v in types"></select>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <small>Press enter to add the column</small>
+
+                <h5>Options</h5>
+                <p class="row">
+                    <input type="checkbox" id="option_dropifexist" ng-model="model.option_dropifexist"/>
+                    <label for="option_dropifexist">Drop Table if exists ?</label>
+                </p>
+
+            </div>
+            <div class="col s4">
+                <p class="row">
+                    <input type="checkbox" id="feature_archivable" ng-model="model.feature_archivable"/>
+                    <label for="feature_archivable">Archivable</label>
+                </p>
+                <blockquote><small>Enable archiving for items in this model</small></blockquote>
+                <p class="row">
+                    <input type="checkbox" id="feature_sortable" ng-model="model.feature_sortable"/>
+                    <label for="feature_sortable">Sortable</label>
+                </p>
+                <blockquote><small>Enable sorting for this model</small></blockquote>
+                <p class="row">
+                    <input type="checkbox" id="feature_translatable" ng-model="model.feature_translatable"/>
+                    <label for="feature_translatable">Translatable</label>
+                </p>
+                <blockquote><small>Enable i18n</small></blockquote>
+                <p class="row">
+                    <input type="checkbox" id="feature_publishing" ng-model="model.feature_publishing"/>
+                    <label for="feature_publishing">Publishing</label>
+                </p>
+                <p class="row">
+                    <input type="checkbox" id="feature_versionable" ng-model="model.feature_versionable"/>
+                    <label for="feature_versionable">Versionable</label>
+                </p>
+            </div>
+        </div>
+
+        <button ng-disabled="form.$invalid" type="submit" class="waves-effect waves-light btn-large">Create</button>
+    </form>
+</div>

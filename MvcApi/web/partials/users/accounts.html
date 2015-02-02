@@ -1,0 +1,84 @@
+<div class="row">
+    <spinner ng-show="loading"></spinner>
+    <form class="col s12" name="form" ng-submit="submit()" ng-class="{'semi-transparent':loading}">
+
+        <div class="row">
+            <div class="col m4">
+                <h4 ng-show="user.FirstName">Welcome {{user.FirstName}}</h4>
+                <div class="collection" ng-show="accounts.length">
+                    <a ng-repeat="account in accounts" 
+                       ng-click="setAccount(account)" title="[$ {{account.balance}}] - {{account.description}}" 
+                       class="collection-item">{{account.name}}
+                        <span ng-if="account.isnew" class="new badge">&nbsp;</span>
+                    </a>
+                </div>
+                <div ng-show="accounts.length == 0">
+                    <p class="flow-text">You have no accounts</p>
+                </div> 
+            </div>
+            <div class="col m8">
+                <h4>Accounts</h4>
+                <p>Please add your accounts</p>
+                <br />
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="mdi-action-account-box prefix"></i>
+                        <input name="name" id="name"
+                               ng-model="model.name"
+                               ng-required="true"
+                               type="text"
+                               class="validate">
+                        <label for="name" ng-class="{active:model.name}">Account name</label>
+                        <p class="error"
+                           ng-show="form.name.$dirty && form.name.$error.required">
+                            This Account name is required
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12" >
+                        <i class="mdi-action-account-balance prefix"></i>
+                        <input name="iban" id="iban"
+                               ng-model="model.iban"
+                               ng-required="true"
+                               ng-iban
+                               type="text"
+                               class="validate">
+                        <label for="name" ng-class="{active:model.iban}">IBAN code</label>
+                        <p class="error"
+                           ng-show="form.iban.$dirty && (form.iban.$error.required || form.iban.$error.iban)">
+                            Please enter a valid IBAN
+                        </p>
+                        <p><small>E.g. CY17 0020 0128 0000 0012 0052 7600</small></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12" >
+
+                        <i class="mdi-editor-attach-money prefix"></i>
+                        <input name="balance" id="balance"
+                               ng-model="model.balance"
+                               ng-required="true"
+                               type="text"
+                               class="validate">
+                        <label for="balance" ng-class="{active:model.balance}">Balance</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea name="description" id="description" ng-model="model.description" class="materialize-textarea"></textarea>
+                        <label for="description" ng-class="{active:model.description}">Description</label>
+                    </div>
+                </div>
+                <button ng-disabled="form.$invalid" type="submit" class="waves-effect waves-light btn-large">Save</button>
+                <a class="waves-effect waves-red btn-flat btn-large" ng-click="removeAccount(model)" ng-disabled="!model.iban">DELETE</a>
+            </div>
+
+        </div>
+
+
+       
+    </form>
+</div>

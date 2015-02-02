@@ -1,0 +1,135 @@
+#main {
+    color: #eafff0;
+}
+
+.hidden {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+}
+
+.logo {
+    font-size: 35px;
+    padding-bottom: 12px !important;
+    border-bottom: 1px solid gray;
+
+    a#logo-container {
+        color: green;
+        padding-top: 10px;
+        display: block;
+    }
+}
+
+p.error {
+    color: red;
+    font-size: 11px;
+}
+
+spinner {
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    display: inline-block;
+    z-index:9999;
+}
+
+.semi-transparent {
+    opacity: .2;
+}
+
+.collection-item-transaction {
+    text-overflow: ellipsis;
+}
+
+canvas {
+}
+
+.line-legend {
+    position: absolute;
+    right: 0;
+    padding: 15px;
+    background: rgba(255,255,255, .8);
+    display: block;
+
+    span {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    li {
+        position: relative;
+        padding: 4px 0 10px;
+        padding-left: 40px;
+    }
+}
+
+
+.card {
+    background: #FFF;
+    padding: 30px;
+}
+
+#loginform{
+    width:450px;
+    margin:120px auto 30px;
+}
+
+#loginform input {
+    display: inline-block;
+    height: auto !important;
+    font-size: 16px;
+    color: #999;
+    margin: 0;
+    padding: 10px;
+}
+
+
+#loginform .waves-button-input {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+    color: #FFF;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+#loginform .waves-effect {
+    display: inline-block;
+    //background: #00BCD4;
+}
+
+#loginform form h3 {
+    font-size: 18px;
+}
+
+.card.dialog {
+    width: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -150px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.card.dialog h3 {
+    font-size: 36px;
+    font-weight: 200;
+    color: #00bcd4;
+}
+
+#registerform{
+    width:80%;
+    margin:0 auto;
+}
+
+.user-tab{
+    padding:0 15px;
+    font-size:20px;
+
+}

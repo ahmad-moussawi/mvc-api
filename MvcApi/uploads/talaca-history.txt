@@ -1,0 +1,998 @@
+ls
+cd webapps
+ls
+cd ..
+ls
+ls conf
+du -skh *
+ls
+cd logs
+ls
+cd ..
+ls
+pwd
+cd ..
+ls
+cd apache-tomcat-7.0.23
+ls
+cd
+vi .ssh/authorized_keys
+cd /usr/share/apache-tomcat-7.0.23
+cd /home
+ls
+cd pos
+ls
+du -ksh *
+ls pos
+ls
+ls -alh
+ls dbbk
+ls -alh
+ls -slh dbbk
+cd /usr/var
+ls
+cd /usr/share
+ls
+cd apache-tomcat-7.0.23
+ls
+cd webapps
+ls
+cd
+ls
+cd /home/pos
+ls
+cd pos
+ls
+more Start-Server-Engine.bat
+cd conf
+ls
+more mysql.properties
+cat /etc/my.cnf
+cd /home/pos
+ls
+cd pos
+ls
+ls logs
+cd ..
+ls
+du -skh *
+cd pos
+ls
+du -skh *
+pwd
+cat /proc/cpuinfo
+cd /home/pos/pos/logs
+more posadmin.log | grep 95968
+more posadmin.log | grep topup
+more posadmin.log | grep 10100644
+more posadmin.log | grep 10100479
+pwd
+cd ..
+ls
+ps -ef | grep java | grep POSAd
+kill -9 1752
+cd dist
+cd lib
+ll
+cp "FOOPersistence new.jar" FOOPersistence.jar
+cd ../..
+ls
+./Start-Admin-Server-totestnewserver.bat &
+exit
+date
+df -kh
+cd /
+ls
+cd ~
+ls
+cd tomcat
+ls
+ll
+cd logs
+ls
+cd /var/lib
+sl
+ls
+cd mysql/
+ls
+more mysql-bin.index
+ls
+more mysql-bin.001676
+more mysql-bin.001676 | grep insert
+more mysql-bin.001676 | grep 2014
+more mysql-bin.001676 | grep NOW
+more mysql-bin.001676
+df -kh
+free -m
+top
+pwd
+cd /home/pos/pos/logs
+tail -f posadmin.log
+exit
+df -kh
+cd /home/pos/pos/logs
+tail -f posadmin.log
+cd ..
+ls
+ps -ef | grep java | grep POSA
+kill -9 10357
+cd dist/lib
+ls
+cp "FOOPersistence new.jar" FOOPersistence.jar
+cd ../..
+ls
+./Start-Admin-Server-totestnewserver.bat &
+exit
+cd /
+ls
+cd var
+ls
+cd lib
+ls
+cd mysql
+ls
+pwd
+cd /home/pos/pos/logs
+tail -f posadmin.log
+cd .ssh
+ks
+ls
+vi authorized_keys
+exit
+cd .ssh
+ls
+ls -lah
+mysql -u root
+mysql -u root -p
+df -kh
+ps -ef | grep java
+df-kh
+df -kh
+free -m
+cd /home/pos/pos/logs
+more pos.log | grep AN35752205606470
+cd /
+cd ~/tomcat/
+ls
+cd logs
+ls
+more localhost_access_log.2014-12-11.txt
+cd /var/lib/mysql
+ls
+pwd
+mysql -uroot -pfoo2009solutions
+df -kh
+cd tomcat/
+ls
+cd webapps/
+ls
+cd ../logs
+ls
+more localhost_access_log.2014-12-05.txt
+more localhost_access_log.2014-12-04.txt
+more localhost_access_log.2014-12-08.txt
+more localhost_access_log.2014-12-01.txt
+more localhost_access_log.2014-12-08.txt
+cd ../..
+cd /home/pos/pos
+ls
+ps -ef | grep java
+ps -ef | grep java | grep posad
+ps -ef | grep java | grep new
+ps -ef | grep java | grep POSAdminServernew
+kill -9 24778
+cd dist/lib
+ls
+cp "FOOPersistence new.jar" FOOPersistence.jar
+cd ../..
+ls
+./Start-Admin-Server-totestnewserver.bat &
+exit
+cd /home
+ls
+cd maintenance/
+ls
+more run.bat
+ps -ef | grep java | grep serverkikimaintenance
+./run.bat &
+cd /home/pos/pos/logs
+tail -f posadmin.log
+cd /home/pos/pos/logs
+tail -f posadmin.log
+ls
+cd /home/pos/
+ls
+cd pos
+ls
+cd logs
+ls
+tail -f pos.log
+useradd voucher
+exit
+cat /etc/*release*
+mysql -u root -pfoo2009solutions
+um repolist all | grep mysql
+yum repolist all | grep mysql
+cd /etc
+ls
+ls yum*
+cd yum.repos.d/
+ls
+cd
+cd /home
+ls
+cd pos
+ls
+cd dbbk
+ls
+cd ..
+cd scripts/
+ls
+cd ..
+ls
+ls back
+crontab -l
+more /home/pos/backupdb.sh
+/usr/bin/mysqldump -u root -pfoo2009solutions --routines --triggers --no-data --databases talacoalfa posdb talaco mysql > backup.sql
+ls
+ls -alh
+more backup.sql
+ls
+mv backup.sql /var/www/html/
+vi backups.sql
+cd /var/www/html
+vi backup.sql
+cd /usr/share
+ls
+ls /var/www/html
+ls /var/www/html/talaco
+pwd
+cp /usr/share/apache-tomcat-7.0.23.tar.gz /var/www/html/talaco/apache-tomcat-7.0.23.tar.gz
+ls
+ls apache-tomcat-7.0.23
+ls conf
+pwd
+ls
+cd apache-tomcat-7.0.23
+ls
+ls webapps
+ls conf
+cd conf
+ls
+more server.xml
+ls
+more catalina.properties
+
+ls
+cd ..
+ls
+cd
+cd .ssh
+ls
+vi authorized_keys
+mysql -u root -pfoo2009solutons -h /usr/lib/jvm/jre-1.7.0-openjdk.x86_64/
+mysql -u root -pfoo2009solutons -h talacoslave.cloudapp.net
+telnet talacoslave.cloudapp.net 3306
+ls
+cd
+ls
+cd /var/www/html
+ls
+cd talaco
+ls
+cd ..
+ls
+vi backup.sql
+cd
+ls
+cd /home/pos
+ls
+more backupdb.sh
+ls
+cd dbbk
+ls
+df -kh
+gunzip posdb.2014-12-20.sql.gz
+ls
+more posdb.2014-12-20.sql
+ls
+tail -100 posdb.2014-12-20.sql
+top
+htop
+ls
+userpassword=" --user=root --password=foo2009solutions"
+echo userpassword
+echo $userpassword
+ls
+cd
+ls
+mysql $userpassword -e 'FLUSH TABLES WITH READ LOCK'
+mysql $userpassword -e 'SHOW MASTER STATUS \G'
+mysql $userpassword -e 'UNLOCK TABLES'
+mysql $userpassword -e 'FLUSH TABLES WITH READ LOCK'
+mysql $userpassword -e 'SHOW MASTER STATUS \G'
+mysql $userpassword -e 'UNLOCK TABLES'
+ mysql $userpassword -e 'SHOW MASTER STATUS \G'
+mysql $userpassword -e 'FLUSH TABLES WITH READ LOCK'
+mysql $userpassword -e 'SHOW MASTER STATUS \G'
+mysqldump $userpassword --single-transaction --flush-logs --databases posdb > posdb.`date +%Y-%m-%d`.sql
+mysql $userpassword -e 'UNLOCK TABLES'
+ls -alht
+gzip posdb.2014-12-20.sql
+ls -alht
+cd .ssh
+ls
+cat auh
+cat authorized_keys
+cat /etc/passwd
+ls
+cd /home
+ls
+cd pos
+ls
+du -skh *
+cd pos
+ls
+du -ksh *
+pwd
+cd ..
+ls
+du -skh *
+ld dbbk
+ls dbbk
+cd pos
+ls
+ls -alh
+su -ksh *
+du -skh *
+tar -cvf *.sh *.bat bb.tar
+ls
+du -skh *
+tar -cvf bb.tar *.sh *.bat
+ls
+ls -alht
+ps -ef
+cd ..
+ls
+find . -name test.key
+ps -ef | grep java
+java -version
+java -Xms50m -Xmx50m -Duser.timezone=Asia/Beirut -Djavax.net.ssl.keyStore=jksfoo01.jks -Djavax.net.ssl.keyStorePassword=pos -cp dist/SocketServer.jar com.foo.talaco.server.RemoteServer remoteserver 9912
+ls
+cd pos
+java -Xms50m -Xmx50m -Duser.timezone=Asia/Beirut -Djavax.net.ssl.keyStore=jksfoo01.jks -Djavax.net.ssl.keyStorePassword=pos -cp dist/SocketServer.jar com.foo.talaco.server.RemoteServer remoteserver 9912
+ls -alh dist
+java -Xms50m -Xmx50m -Duser.timezone=Asia/Beirut -Djavax.net.ssl.keyStore=jksfoo01.jks -Djavax.net.ssl.keyStorePassword=pos -cp dist/SocketServer_old6.jar com.foo.talaco.server.RemoteServer remoteserver 9912
+java -Xms50m -Xmx50m -Duser.timezone=Asia/Beirut -Djavax.net.ssl.keyStore=jksfoo01.jks -Djavax.net.ssl.keyStorePassword=pos -cp dist/SocketServer_old1.jar com.foo.talaco.server.RemoteServer remoteserver 9912
+java -Xms50m -Xmx50m -Duser.timezone=Asia/Beirut -Djavax.net.ssl.keyStore=jksfoo01.jks -Djavax.net.ssl.keyStorePassword=pos -cp dist/SocketServer_old2.jar com.foo.talaco.server.RemoteServer remoteserver 9912
+ls
+ls -alh dist/lib
+ls -alht dist/lib
+df -kh
+mysql -u root -pfoo2009solutions
+ps -ef | grep java
+ps -ef | grep socket
+clear
+ps -ef | grep socket
+ps -ef | grep Remote
+cd ~/posdb.2014-12-20.sql.gz
+cd /home
+ls
+cd pos
+ls
+cd pos
+ls
+more Start-Server-Engine.bat
+ls dist
+cd ..
+ls
+cd pos
+ls
+more Start-Admin-Server-totestnewserver.bat
+cd dis
+cd dist
+ls
+cd lib
+ls
+cd ..
+ls
+cd ..
+ls
+more Start-Admin-Server-totestnewserver.bat
+more Start-Server-Engine.bat
+cd /home/pos/pospos
+cd /home/pos/pos
+ls
+more Start-Server-Engine.bat
+ps -ef | grep java
+ps -ef | grep java | grep SocketServer
+more Start-Server-Engine.bat
+ls
+cd dist
+cd lib
+ls
+more Start-Admin-Server.bat
+more Start-Admin-Server-totestnewserver.bat
+cd ../..
+ls
+more Start-Admin-Server-totestnewserver.bat
+ls
+cp dist distold
+cp -r dist distold
+ls
+cd distold
+ls
+cd lib
+ls
+cd FOOPersistenceoldwsa77777hayhiyeeeeee.jar FOOPersistence.jar
+cd ../..
+ls
+cp Start-Admin-Server-totestnewserver.bat Start-Admin-Server-newserver.bat
+ls
+vi Start-Admin-Server-newserver.bat
+vi Start-Server-Engine.bat
+more stopServerEngine.sh
+more restart-server-engine.sh
+more Start-SSL-POS-Socket.bat
+cd dit
+cd dist/lib
+ls
+cd "FOOPersistence new.jar" FOOPersistence.jar
+cp "FOOPersistence new.jar" FOOPersistence.jar
+ls
+ll
+cd ../../distold/lib
+ll
+cp FOOPersistenceoldwsa77777hayhiyeeeeee.jar FOOPersistence.jar
+ll
+cd ..
+ls
+mv dist distnew
+ls
+cd distnew
+ls
+cd lib
+ls
+cd ../..
+ls
+mv distold dist
+ls
+vi Start-Server-Engine.bat
+vi Start-Admin-Server-newserver.bat
+more Start-Admin-Server-newserver.bat
+more Start-Server-Engine.bat
+more stopSSLPOSSocket.sh
+more Start-SSL-POS-Socket-7778.bat
+more Start-SSL-POS-Socket.bat
+more Start-SSL-Socket-17777.bat
+more Start-Server-Engine.bat
+git remote -v
+ls
+df -kh
+ps -ef | grep mysql
+ls
+mysql -u root -pfoo2009solutions
+exit
+df -kh
+ps -ef | grep java
+pwdx 2925
+pwdx 2925 2926
+pwdx 2925 2926 7778 11596 11941 15952 15974 17178 24807
+cd /home/voucher
+ls
+ls -alh
+cd /home/voucher
+ls
+ls -alh
+du -skh *
+more start.sh
+more startnew.sh
+more startalfanew.sh
+mysql -u root -pfoo2009solutions
+ls
+cd logs
+ls
+tail -f talaco.log
+date
+tail -f talaco.log
+kill -9 15952 15974
+/usr/bin/mysqldump -u root -pfoo2009solutions --single-transaction --no-create-info --databases talaco talacoalfa | mysql -h talacoslave.cloudapp.net -u root -pfoo2009solutions
+cd /home/voucher
+java -jar dist/talacoalfanew.jar talacopos.info 1087 &
+java -jar dist/talaconew.jar talacopos.info 1088 &
+exit
+ps -ef | grep java
+ls
+pwd
+ls
+cd
+ls
+mkdir tmp
+ls
+cd tmp
+tail -f /home/voucher/logs/talaco.log
+ls
+ps -ef | grep java
+kill -9 9210 9227
+/usr/bin/mysqldump -u root -pfoo2009solutions --single-transaction --no-create-info --databases talaco talacoalfa > talacoalfa.sql
+ ls -alh
+mv talacoalfa.sql /var/www/html
+mv /var/www/html/talacoalfa.sql .
+ls
+cd
+ps -ef | grep java
+cd /home/voucher
+java -jar dist/talacoalfanew.jar talacopos.info 1087 &
+java -jar dist/talaconew.jar talacopos.info 1088 &
+ps -ef | grep java
+exit
+quit
+exit
+ps -ef | grep java
+cd /root/.ssh
+ls
+vi authorized_keys
+cd /etc/httpd
+ls
+ls -alh
+cd conf.d
+ls
+more proxy_ajp.conf
+ls
+more ssl.conf
+ls /etc/pki/tls/certs/
+cd /etc/httpd
+ls
+ls modules
+ls -alh
+cd /var/www/html
+ls
+cd ..
+du -skh *
+cd /home/
+ls
+cd voucher/
+ls
+./startalfanew.sh &
+./
+ps -ef | grep java
+ls
+more startnew.sh
+ps -ef | grep java | grep talaco
+ps -ef | grep java | grep talaco | grep new
+kill -9 12344
+kill -9 32586
+ls
+./startalfanew.sh &
+ps -ef | grep java | grep talaco | grep new
+kill -9 12361
+ls
+./startnew.sh &
+tail -f /var/log/messages
+41766
+sudo iptables -I INPUT 1 -p tcp --dport 41766 -j ACCEPT
+tail -f /var/log/messages
+sudo iptables -I INPUT 1 -p tcp --dport 56204 -j ACCEPT
+exit
+ps -ef | grep java
+cd /home
+ls
+cd voucher
+ls
+du -ksh *
+ls uploads
+cd ..
+ls
+du -skh *
+ls
+cd voucher
+ls
+cd dist
+ls
+cd ..
+ls
+cd conf
+ls
+more log4j.properties
+ls
+ls -alh
+pwd
+cd ..
+ls
+cd dist
+ls
+cd lib
+ls
+cd ..
+ls
+cd ..
+ls
+cd dist
+
+cd ..
+cd /home/pos/pos/logs
+tail -f posadmin.log
+ps -ef | grep java
+cd ..
+ls
+./restart-admin-server.sh &
+more restart-admin-server.sh
+ls
+./Start-Admin-Server.bat
+ls
+ps -ef | grep java | grep pos
+ps -ef | grep java | grep dist/POSAdminServernew.jar
+kill -9 11941
+ls
+./Start-Admin-Server-newserver.bat &
+exit
+cd /home/pos/pos
+ls
+ps -ef | grep java | grep new
+kill -9 21126
+./Start-Admin-Server-newserver.bat
+ps -ef | grep java | grep new
+./Start-Admin-Server-newserver.bat &
+exit
+cd /usr/share/apache-tomcat-7.0.23/
+cd conf
+ls
+cat tomcat-users.xml
+ls
+iptables --list
+sudo iptables -I INPUT 1 -p tcp --dport 8080 -j ACCEPT
+sudo /sbin/service iptables save
+ps -ef | grep java
+ls
+more server.xml
+ls
+vi server.xml
+cd /var/log
+ls
+cd httpd
+ls
+tail -f ssl_access_log
+ls
+cd /usr/share/apache-tomcat-7.0.23/
+ls
+cd logs
+ls
+ls -alht
+tail -f catalina.out
+cd /home
+cd voucher
+ls
+ps -ef | grep java
+cd
+ls
+cd /home/pos
+ls
+cd pos
+ls
+more Start-Admin-Server-newserver.bat
+ls
+ls distnew
+ls -alh
+more Start-Admin-Server.bat
+more Start-Admin-Server-newserver.bat
+ps -ef | grep java
+netstat -nat | grep LISTEN
+ps -ef | grep java
+ps -ef | grep 35427
+ps -ef | grep 25427
+ls
+pwd
+ls
+pwd
+cd
+cd /etc/httpd
+ls
+cd conf.d
+ls
+more proxy_ajp.conf
+ls
+pwd
+ls
+service iptables stop
+service iptables start
+iptables --list
+file /etc/sysconfig/iptables
+vi /etc/sysconfig/iptables
+service iptables restart
+ls
+cd
+ls
+java -cp TestRMI.jar testrmi/TestRMI localhost 9988 remoteserver
+java -version
+ls
+java -classpath TestRMI.jar testrmi.TestRMI localhost 9988 remoteserver
+mkdir java
+cd java
+ls
+pwd
+ls
+java -c src/testrmi/*.java
+javac src/testrmi/*.java
+javac src/*
+javac src/foo/talaco/server/* src/testrmi/*
+javac src/foo/talaco/server/*.java
+javac
+javac src/foo/talaco/server/*.java
+ls src/foo/talaco/server/
+ls src/foo/talaco/s
+ls src/foo/talaco/
+ls src/foo/
+ls src
+javac src/cdom/foo/talaco/server/* src/testrmi/*
+javac src/com/foo/talaco/server/* src/testrmi/*
+ls
+ls src/com/foo/talaco/server
+cd ..
+ls
+cd java
+java -cp src/com/foo/talaco/server/;src/testrmi/ testrmi.TestRMI localhost 9988 remoteserver
+java -cp src/com/foo/talaco/server/:src/testrmi/ testrmi.TestRMI localhost 9988 remoteserver
+ls
+ls src
+cd src
+java -cp com/foo/talaco/server/:testrmi/ testrmi.TestRMI localhost 9988 remoteserver
+ls testrmi
+java -cp com/foo/talaco/server/:testrmi/ testrmi.TestRMI localhost 9988 remoteserver
+java -cp ./com/foo/talaco/server/:./testrmi/ testrmi.TestRMI localhost 9988 remoteserver
+java -cp ./com/foo/talaco/server/:./testrmi/TestRMI testrmi.TestRMI localhost 9988 remoteserver
+java -cp ./com/foo/talaco/server/:./testrmi/TestRMI.class testrmi.TestRMI localhost 9988 remoteserver
+ls
+java testrmi.TestRMI localhost 9988 remoteserver
+java testrmi.TestRMI talacoslave.cloudapp.net 9988 remoteserver
+ls
+vi test.sh
+chmod u+x test.sh
+./test.sh
+cat test.sh
+mysql -u root -h foomysql.cloudapp.net -pfoo2009solutions
+mysql -u foo -h foomysql.cloudapp.net -pfoo2009solutions
+ps -A x |grep sshd |grep -v grep
+cd /home/pos/pos/logs
+tail -f pos.log
+tail -f posadmin.log
+cd ..
+ps -ef | grep java | grep new
+ps -ef | grep java | grep POSAdminServernew
+kill -9 21943
+ls
+./Start-Admin-Server-newserver.bat &
+ps -ef | grep java | grep POSAdminServernew
+exit
+cd /home/pos/pos/logs
+tail -f posadmin.log
+ps -ef | grep java | grep POSAdminServernew
+kill -9 27090
+ls
+cd ..
+ls
+./Start-Admin-Server-newserver.bat &
+exit
+df -kh
+cd /var/www/html
+ls
+ls -alh
+ls -alh shush
+ls -alh talaco
+pwd
+cd
+ls
+cd tmp
+ls
+wget https://raw.github.com/sivel/speedtest-cli/master/speedtest_cli.py
+wget http://raw.github.com/sivel/speedtes-cli/master/speedtest_cli.py
+wget --no-check-certificate  https://raw.github.com/sivel/speedtes-cli/master/speedtest_cli.py
+ls
+ wget https://raw.github.com/sivel/speedtest-cli/master/speedtest_cli.py
+ wget https://raw.github.com/sivel/speedtest-cli/master/speedtest_cli.py --no-check-certificate
+ls
+chmod u+x speedtest_cli.py
+./speedtest_cli.py
+useradd ghady
+passwd ghady
+ls
+pwd
+cd /var/www/html
+ls
+cd talaco
+ls -alh
+cd
+ls
+cd tmp
+ls
+ls -alh
+wget foo-apps.org/tmp/backup.tar.gz
+wget foopush.cloudapp.net/tmp/backup.tar.gz
+wget foo-apps.org/tmp/backup.tar.gz
+wget foopush.cloudapp.net/tmp/backup.tar.gz
+wget foo-apps.org/tmp/backup.tar.gz
+wget foo.mobi/tmp/backup.tar.gz
+df -kh
+tail -f /var/log/messages
+iptables -I INPUT -s 218.93.211.105 -j DROP
+tail -f /var/log/messages
+iptables -I INPUT -s 110.80.138.86 -j DROP
+tail -f /var/log/messages
+iptables -I INPUT -s 192.138.214.167 -j DROP
+tail -f /var/log/messages
+iptables -L -n
+tail -f /var/log/messages
+df -kh
+free -m
+cd /home/pos/pos
+ls
+ps -ef | grep java | grep new
+ps -ef | grep java | grep distnew/POSAdminServernew.jar
+kill -9  28428
+ps -ef | grep java | grep distnew/POSAdminServernew.jar
+ls
+./Start-Admin-Server-newserver.bat &
+exit
+df -kh
+ls
+cd ..
+ls
+cd var
+ls
+cd ..
+ls
+cd usr
+ls
+cd ../srv
+ls
+cd ..
+cd logs
+ls
+cd ..
+cd /
+ls
+cd etc
+ls
+cd my.cnf
+cd ssh
+ls
+more /var/log/mysqld.log
+cd /var/log/
+ls
+tail mysqld.log
+tail -f yum.log
+tail yum.log-20150101
+cd https
+cd httpd
+ls
+pwd
+tail error_log
+tail ssl_access_log
+tail ssl_error_log
+more ssl_error_log
+ls
+tail ssl_request_log
+cd ..
+tail -f /var/lib/mysql/
+cd /var
+cd lib/
+ls
+cd mysql
+ls
+pwd
+tail mysql-bin.index
+tail mysql-bin.001854
+more mysql-bin.001854
+cd /var
+ls
+cd lib
+ls
+cd mysql/
+ls
+more mysql-bin.001850
+ls
+more mysql-bin.001858
+cd mysql
+ls
+cd ..
+cd cashcountdb/
+ls
+more cashcount_history.frm
+pwd
+/var/lib/mysql/cashcountdb
+cd /home/pos/pos
+ls
+ps -ef | grep java | grep new
+kill -9 27030
+ls
+./Start-Admin-Server-newserver.bat &
+exit
+cd /var/lib/mysql/
+ls
+more mysql-bin.001858
+exit
+cd /home/pos/pos
+ls
+ps -ef | grep java | grep new
+kill -9 20729
+ls
+./Start-Admin-Server-newserver.bat &
+ps -ef | grep java | grep new
+exit
+cd /home/pos/pos
+ls
+ps -ef | grep java | grep new
+kill -f 23494
+kill -9 23494
+./Start-Admin-Server-newserver.bat &
+ls
+more Start-Admin-Server-newserver.bat
+cd dist
+cd ../distnew
+ps -ef | grep java | grep new
+kill -9 6681
+ls
+cd ..
+ls
+./Start-Admin-Server-newserver.bat &
+ps -ef | grep java | grep new
+kill -9 6918
+ls
+./Start-Admin-Server-newserver.bat &
+ps -ef | grep java | grep new
+kill -9 7107
+ls
+ps -ef | grep java | grep new
+ls
+./Start-Admin-Server-newserver.bat &
+exit
+sudo rpm -Uvh http://mirror.metrocast.net/fedora/epel/6/i386/epel-release-6-8.noarch.rpm
+sudo yum install denyhosts
+rpm -Uvh http://mirror.metrocast.net/fedora/epel/6/i386/epel-release-6-8.noarch.rpm
+yum install denyhosts
+service mysqld status
+service httpd status
+service tomcat status
+ps -ef | grep java
+top
+service tomcat status
+free -m
+service tomcat restart
+service tomcat status
+service tomcat start
+service tomcat6 status
+service tomcat7 status
+service tomcat stop
+service tomcat start
+tomcat start
+cd /usr/share/
+ls
+cd apache-tomcat-7.0.23
+ls
+cd bin
+ls
+sh catalina.sh
+sh catalina.sh  start
+tail -f /var/log/httpd/access_log
+tail -f /var/log/httpd/ssl_access_log
+ls
+cd /var/www
+ls
+ps -ef
+yum list installed
+ sed -i "s/mirrorlist=https/mirrorlist=http/" /etc/yum.repos.d/epel.repo
+yum update -y
+service mysqldstatus
+service mysqld status
+service httpd status
+service httpd start
+service httpd status
+service --status-all
+vi .ssh/authorized_keys
+cd /home/pos/pos
+ps -ef | grep java | gre new
+ps -ef | grep java | grep new
+kill -9 7333
+ls
+./Start-Admin-Server-newserver.bat &
+df -kh
+exit
